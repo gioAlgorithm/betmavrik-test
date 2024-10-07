@@ -1,0 +1,16 @@
+.languageButton {
+  position: absolute; // Position it absolutely within the layout
+  top: 10px; // Adjust the top position as needed
+  right: 10px; // Adjust the right position as needed
+  padding: 10px 20px;
+  background-color: #0070f3; // Change this color as desired
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #005bb5; // Darker shade on hover
+  }
+}

@@ -1,0 +1,61 @@
+.exchangeRates {
+  h2 {
+    margin-bottom: 1rem;
+    color: #333; // Heading color
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    .rateItem {
+      display: flex;
+      align-items: center; // Align items vertically
+      justify-content: center; // Center items horizontally
+      margin: 0.5rem 0; // Space between items
+      font-size: 1.2rem;
+
+      // Set fixed width for uniform container size
+      .currencyContainer,
+      .equalSignContainer,
+      .valueContainer {
+        width: 150px; // Fixed width for uniform container size
+        height: 50px; // Increased height for better visibility
+        display: flex;
+        align-items: center; // Center text vertically
+        justify-content: center; // Center text horizontally
+        border-radius: 8px; // Rounded corners
+        font-weight: bold; // Make text bold
+      }
+
+      .currencyContainer {
+        background-color: #4a90e2; // Light blue for the currency container
+        margin-right: 0.5rem; // Space between currency and equals sign
+        color: #fff; // White text color for currency
+        position: relative; // To position logo inside
+        justify-content: space-between;
+        padding: 0.5rem 1rem; // Padding for better spacing
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Deeper shadow for depth
+      }
+
+      .equalSignContainer {
+        background-color: #e74c3c; // Red for the equals sign
+        color: white;
+        width: 50px;
+        margin: 0 0.5rem; // Space around the equals sign
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
+      }
+
+      .valueContainer {
+        background-color: #27ae60; // Green for the value container
+        color: #fff; // White text color for the value
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Deeper shadow for depth
+      }
+
+      .value {
+        font-size: 1.2rem; // Slightly larger font size for values
+      }
+    }
+  }
+}
